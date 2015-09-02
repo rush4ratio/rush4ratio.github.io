@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style-min.css"/>
+    <title>9-Mezz | Contact Us</title>
+</head>
+<body>
+<nav>
+    <ul class="main-nav clearfix"><!--
+
+	 --><li class="main-nav__item"><a href="index.html">Home</a></li><!--
+		 --><li class="main-nav__item"><a href="what-we-do.html">What We Do</a></li><!--
+		     	 --><li class="main-nav--logo"><a href="index.html"><div></div><!--<img src="img/logo7.png">--></a></li><!--
+		 --><li class="main-nav__item"><a href="team.html">Team</a></li><!--
+	     --><li class="main-nav__item"><a href="#">Contact</a></li><!--
+	--></ul>
+</nav>
+<div class="main clearfix">
+    <aside class="sub-content sub-content--contact">
+        <h2 class="sub-content__welcome">Welcome! We're 9-Mezz Consultants.</h2>
+    </aside>
+    <section class="main-content main-content--contact">
+        <form id="contact_form">
+            <label for="name">Name</label><input type="text" id='name'/>
+            <label for="name">Email</label><input type="email" id='email'/>
+            <label for="name">Telephone</label><input type="tel" id='telephone'/>
+            <fieldset class="checkbox-group">
+                <legend>What can we do for you?</legend>
+                <input class="checkbox-group--item" type="checkbox" name="new-website" value="New website" />A New Website <br />
+                <input class="checkbox-group--item" type="checkbox" name="website-redesign" value="Redesign my website" />Redesign your Website<br />
+                <input class="checkbox-group--item" type="checkbox" name="newsletter" value="Start a Newsletter" />Newsletters<br />
+                <input class="checkbox-group--item" type="checkbox" name="brochure" value="Brochures" />Brochures
+            </fieldset>
+            <label for="message">Special Note</label><textarea id='message'></textarea>
+            <label for="budget">Budget (Kshs)</label><input id='budget' type="range" min="50000" max="150000" value="0" step="10000" onchange="showValue(this.value)" />
+            <span id="range" class="form--range">50000</span>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+<footer class="footer">
+    <p>&copy; 9-Mezz 2015</p>
+</footer>
+<script type="text/javascript">
+    function showValue(newValue)
+    {
+        document.getElementById("range").innerHTML=newValue;
+    }
+</script>
+</body>
+</html>
